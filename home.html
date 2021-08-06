@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="css/yu_lesson_test1_ag.css">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script>
+  $(document).ready(function() {
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 0) {
+      $('home-menu').css('opacity', 0.8);
+    } else {
+      $('home-menu').css('background-color','transparent')
+    }
+  });
+});
+
+$(function(){
+  var offset=$(".scr").offset().top;
+  $(window).scroll(function(){
+    var winTop=$(document).scrollTop();
+    console.log(winTop);
+    if(winTop>=offset){
+      $(".home-menu").css('background-color','rgba(255,255,255,0.8)');
+    }else{
+      $(".home-menu").css('background-color','rgba(0,0,0,0)');
+    }
+  })
+});
+
+$(function(){
+  $(".burger-btn").click(function(){//ハンバーガーボタンをクリックしたとき
+    if($(this).hasClass("open")){
+      $(".burger-btn span").css("background","#FFF");
+      // $("nav").css("display","none")
+      $("nav ul").animate({"top":-354 + "px"},500),//0.5秒で表示したり非表示にしたりする
+$("nav ul").css("display","none");
+      $(this).removeClass("open");
+
+  }else{
+    $(this).addClass("open");
+    $("nav ul").css("display","block");
+    $("nav ul").animate({"top":0 + "px"},500);
+  }
+  });
+});
+
+
+  </script>
+</head>
+
+<body>
+  <header>
+    <div class="home-top">
+      <div class="home-menu">
+        <a href="./home.html">
+          <img id="logo" src="./img/beyond_54.png" alt="ロゴ">
+        </a>
+        <div class="burger-btn">
+          <span class="x"></span>
+          <span class="y"></span>
+          <span class="z"></span>
+        </div>
+        <nav>
+          <ul>
+            <li>
+              <a class="g" href="./home.html">HOME</a>
+            </li>
+            <li>
+              <a class="g" href="./next.html">NEXT EVENT</a>
+            </li>
+            <li>
+              <a class="g" href="./back.html">BACK NUMBER</a>
+            </li>
+            <li>
+              <a class="g" href="./partners.html">イベント予約はこちら</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="scr"></div>
+  </header>
+
+  <prologue>
+    <div class="prologue-container">
+      <div class="title">
+        <h1>PROLOGUE</h1>
+        <h2>プロローグ</h2>
+      </div>
+      <div class="pro-article">
+        <h1>
+          将来に対する不安や悩みは尽きない・・・
+        </h1>
+        <p>
+          ・思っていた仕事と違う
+          <br>
+          <br>
+          ・仕事が思うようにいかず自信がない
+          <br>
+          <br>
+          ・このまま今の仕事を続けるべきか？本当は自分に向いていない？
+          <br>
+          <br>
+          ・日々の仕事にやりがいや、新鮮さを見いだすことができない
+          <br>
+          <br>
+          ・やりたいことが見つからない、何を頑張ったらいいのかわからない
+          <br>
+          <br>
+          ・結婚や出産したら今の仕事はどうしよう？先のことが見えない
+        </p>
+        <h2>
+          人は誰しも本来秘めた可能性がある。しかし、それを全開に発揮している人は一体何人いるだろうか？本当は更に向上していきたいがきっかけがない人は多い。
+        </h2>
+      </div>
+    </div>
+  </prologue>
+
+  <beyond>
+    <div class="beyond-container">
+      <div class="title2">
+        <h1>What is BEYOND?</h1>
+        <h2>ビヨンドとは？</h2>
+      </div>
+      <div class="beyond-article">
+        <h1>
+          "実は企業はこう思ってる"
+        </h1>
+        <p>
+          自分の視点での「こんな仕事がしたい」「こんな会社に入りたい」などはあっても、その逆側の視点って意外に見落としがちな人もいるのでは？
+          <br>
+          <br>
+          BEYONDの”テーマ”は「企業のぶっちゃけ」
+          <br>
+          <br>
+          経営者や人事など人を採用する側の視点から、
+          <br>
+          <br>
+          「今どのような人材が求められているのか？」
+          <br>
+          <br>
+          「ぶっちゃけどんなところを見て人を採用しているのか？」
+          <br>
+          <br>
+          「ぶっちゃけどんな人がうまくいくのか？」
+          <br>
+          <br>
+          BEYONDは、世の中の企業の経営者や人事担当者をお招きし、
+        </p>
+        <h2>
+          ”今の自分の山を超えていく”
+        </h2>
+        <p>
+          為のきっかけとなる環境を提供していきます。
+        </p>
+      </div>
+    </div>
+  </beyond>
+
+  <get>
+    <div class="title3">
+      <h1>
+      セミナーに参加すると
+      <br>
+      こんなことが得られます
+      </h1>
+    </div>
+    <img class="next-img" src="./img/beyond_66.jpg" alt="ロゴ">
+    <img class="next-img" src="./img/beyond_67.jpg" alt="ロゴ">
+    <img class="next-img" src="./img/beyond_68.jpg" alt="ロゴ">
+    <img class="next-img" src="./img/beyond_69.jpg" alt="ロゴ">
+    <img class="next-img" src="./img/beyond_70.jpg" alt="ロゴ">
+  </get>
+
+  <next>
+    <div class="next-container">
+      <div class="title">
+        <h1>NEXT EVENT</h1>
+        <h2>次回イベント情報</h2>
+      </div>
+        <div class="next-article">
+          <div class="next-box">
+            <img class="next-img" src="./img/beyond_63.jpg" alt="ロゴ">
+          </div>
+          <div class="next-box2">
+            <img id="next-reservation" src="./img/beyond_65.jpg" alt="ロゴ">
+          </div>
+        </div>
+    </div>
+  </next>
+
+  <voice>
+    <div class="voice-container">
+      <div class="title">
+        <h1>voice</h1>
+        <h2>参加者の声</h2>
+      </div>
+        <div class="voice-article">
+          <div class="voice-box">
+            <p>
+            友人の紹介で参加しました。セミナー内容がとても
+            <br>
+            今の自分にとってピッタリなもので将来をとても考え
+            <br>
+            させられました。自己啓発本などとは違う生の経営
+            <br>
+            者の声はリアルで響きました。是非2回目も参加し
+            <br>
+            たいです。
+            </p>
+            <div class="voicename-box">
+              <h1>M・Hさん</h1>
+              <h2>会社員</h2>
+            </div>
+          </div>
+          <div class="voice-box">
+            <p>
+            こういったセミナーに参加するのは初めてで緊張し
+            <br>
+            たのですが、参加者の皆さんが歳も近くていい方ば
+            <br>
+            かりだったので安心しました。セミナーは普段聞い
+            <br>
+            た事もない新鮮な内容ばかりでとても面白かったで
+            <br>
+            す。また参加したいです。
+            </p>
+            <div class="voicename-box">
+              <h1>M・Hさん</h1>
+              <h2>会社員</h2>
+            </div>
+          </div>
+          <div class="voice-box">
+            <p>
+            普段からセミナーや勉強会に参加するのですが、企
+            <br>
+            画がとてもユニークでとても楽しい時間を過ごせま
+            <br>
+            した。特にセミナー後の懇親会では歳が近くて頑張
+            <br>
+            っている方々と繋がれたのでとても良い刺激になり
+            <br>
+            ました。ありがとうございました。
+            </p>
+            <div class="voicename-box">
+              <h1>M・Hさん</h1>
+              <h2>会社員</h2>
+            </div>
+          </div>
+        </div>
+    </div>
+  </voice>
+
+  <backnumber>
+    <div class="backnum-container">
+      <div class="title">
+        <h1>BACK NUMBER</h1>
+        <h2>過去開催のイベント</h2>
+      </div>
+      <div class="back-article">
+        <div class="back-box">
+          <img class="back-img" src="./img/beyond_3.jpg" alt="ロゴ">
+          <h1>
+          "BEYOND"AT
+          LIFEJUNCTION
+          VOL.06
+          </h1>
+          <h2>📆2018年8月6日</h2>
+          <p>
+          2018年7月18日、第6回"BEYOND"AT
+          LIFEJUNCTIONが開催。ゲストスピーカに
+          「起業家　中村勇気氏」をお招きし、
+          「”個の時代になった今、求められる人材
+          とは？”」「”企業寿命よりも個人寿命が
+          長い時代において身につけるべき実力と
+          は？”」「スキルや専門[...]」
+          </p>
+        </div>
+        <div class="back-box">
+          <img class="back-img" src="./img/beyond_1.jpg" alt="ロゴ">
+          <h1>
+          "BEYOND"AT
+          LIFEJUNCTION
+          <br>
+          VOL.05
+          </h1>
+          <h2>📆2018年8月6日</h2>
+          <p>
+          2018年7月18日、第6回"BEYOND"AT
+          LIFEJUNCTIONが開催。ゲストスピーカーに
+          TEAM　COLORS　ボディメイクトレーナー
+          GOUKI氏をお招きし、見た目を変えるトー
+          タルプロデュースを指導するアーティス
+          ト視点から「確実に相手に印象を残すに
+          は？」「初[...]」
+          </p>
+        </div>
+        <div class="back-box">
+          <img class="back-img" src="./img/beyond_26.jpg" alt="ロゴ">
+          <h1>
+          "BEYOND"AT
+          LIFEJUNCTION
+          VOL.04
+          </h1>
+          <h2>📆2018年8月6日</h2>
+          <p>
+          2018年7月18日、第6回"BEYOND"AT
+          LIFEJUNCTIONが開催。ゲストスピーカーに「スローガン株式会社　HR＆PR室　室長　採用コンサルタント　金子　歩美氏」をお招きし、「市場で評価され、自分の人生を生きる20代のキャリアとは」をテーマにお話[...]
+          </p>
+        </div>
+        <div class="back-box">
+          <img class="back-img" src="./img/beyond_13.jpg" alt="ロゴ">
+          <h1>
+          "BEYOND"AT
+          LIFEJUNCTION
+          VOL.03
+          </h1>
+          <h2>📆2018年8月6日</h2>
+          <p>
+          2018年7月18日、第6回"BEYOND"AT
+          LIFEJUNCTIONが開催。ゲストスピーカーに
+          TEAM　COLORS　ボディメイクトレーナー
+          GOUKI氏をお招きし、見た目を変えるトー
+          タルプロデュースを指導するアーティス
+          ト視点から「確実に相手に印象を残すに
+          は？」「初[...]」
+          </p>
+        </div>
+      </div>
+    </div>
+  </backnumber>
+
+  <footer>
+    <div id="foot">
+      <p>
+      Copyrighit@2018 BEYOND AT LIFEJUNCTION　　　Designed by MageeWP Themes.
+      </p>
+    </div>
+  </footer>
+
+</body>

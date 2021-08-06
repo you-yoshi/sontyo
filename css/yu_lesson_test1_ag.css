@@ -1,0 +1,1100 @@
+@charset "UTF-8";
+
+/*---Reset---*/
+body, h1, h2, h3, h4, h5, h6, p, address,
+ul, ol, li, dl, dt, dd, img, form, table, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 100%;
+	text-align: left;
+	list-style-type: none;
+	border-collapse: collapse;
+}
+
+textarea { font-size: 100%; vertical-align:middle;}
+img { border-style: none; display: block; }
+hr { display: none; }
+em{font-style: normal}
+input{line-height:auto;vertical-align:middle;}
+strong.more{color:#c30}
+a{text-decoration: none;}
+
+html {
+}
+
+body {
+	font-family:'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+}
+
+/*クラス定義*/
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+}
+
+.clearfix {
+	display: inline-table;
+}
+
+/* Hides from IE-mac \*/
+* html .clearfixheight: 1%;}
+*+html .clearfix{min-height: 1%;}
+.clearfix {display: block;}
+/* End hide from IE-mac */
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	/* border:1px solid red; */
+
+}
+/*--- ページ基本デザイン ---*/
+
+/*--- homeデザイン ---*/
+
+.home-top{
+	width: 100%;
+	height: 100vh;
+	background-image: url(../img/beyond_51.JPG);
+	background-size: cover;
+}
+
+.home-menu{
+	width: 100%;
+	height: 72px;
+	z-index: 10;
+	position: fixed;
+}
+
+#logo{
+	width: 10%;
+	position: absolute;
+}
+
+img{
+	margin: 0 auto;
+}
+
+.burger-btn{
+	display: none;
+}
+
+.x{
+	margin-top: 25px;
+}
+
+.y{
+	margin-top: 35px;
+}
+
+.z{
+	margin-top: 45px;
+}
+
+.burger-btn span{
+		position: absolute;
+    width: 30px;
+    height: 4px;
+		right: 10px;
+    background: #FFF;
+    border-radius: 10px;
+		z-index: 4;
+}
+
+nav{
+	margin: 20px 20px 0px 0px;
+	float: right;
+}
+
+nav li {
+  width: 120px;
+	margin: 10px 5px;
+  text-align: center;
+	float: left;
+}
+
+nav li a {
+  text-decoration: none;
+	font-size: 12px;
+  font-weight: bold;
+}
+
+nav li a:hover{
+	text-decoration: underline;
+	color: #3366ff;
+}
+
+.scr{
+	position: absolute;
+	top:150px;
+	background-color: red;
+}
+
+.prologue-container{
+	background-image: url(../img/beyond_53.JPG);
+	background-attachment: fixed;
+}
+
+.title h1{
+	padding-top: 50px;
+	text-align: center;
+	font-size: 25px;
+	font-weight: bold;
+	font-family: YuGothic,'Yu Gothic',sans-serif;
+}
+
+.title h2{
+	text-align: center;
+	font-size: 14px;
+}
+
+.title2 h1{
+	padding-top: 50px;
+	text-align: center;
+	font-size: 25px;
+	color: #fff;
+}
+
+.title2 h2{
+	text-align: center;
+	font-size: 14px;
+	color: #fff;
+}
+
+.title3 h1{
+	padding: 50px;
+	text-align: center;
+	font-size: 25px;
+	font-family: YuGothic,'Yu Gothic',sans-serif;
+}
+
+.pro-article{
+	margin: 0px 120px;
+}
+
+.pro-article{
+	font-size: 14px;
+}
+
+.pro-article h1{
+	padding-bottom: 50px;
+}
+
+.pro-article h2{
+	padding: 50px 0px;
+}
+
+.pro-article p{
+	font-weight: bold;
+}
+
+.beyond-container{
+	background-image: url(../img/beyond_52.JPG);
+	background-attachment: fixed;
+}
+
+.beyond-article{
+	padding: 50px 120px;
+	color: #fff;
+}
+
+.beyond-article h1{
+	padding-bottom: 45px;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.beyond-article h2{
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.next-container{
+	background-color: #EEEEEE;
+}
+
+.next-article{
+	width: 85%;
+	margin: 0 auto;
+	display: flex;
+	justify-content:center;
+	flex-direction:column;
+}
+
+.next-box{
+	margin: 20px 0px;
+}
+
+.next-box2{
+	margin: 0px 0px 50px 0px;
+}
+
+#next-reservation{
+	width: 1024px;
+}
+
+.voice-container{
+	background-color: #CCFFFF;
+}
+
+.voice-article{
+	width: 85%;
+	margin: 0 auto;
+	display: flex;
+	justify-content:center;
+	flex-direction:row;
+}
+
+.voice-box{
+	margin: 50px 30px 50px 60px;
+}
+
+
+.voice-box p{
+	font-size: 13px;
+}
+
+
+.voicename-article{
+	display: flex;
+	flex-direction:row;
+}
+
+.back-article{
+	width: 85%;
+	margin: 0 auto;
+	display: flex;
+	justify-content:center;
+	flex-direction:row;
+}
+
+.back-box{
+	width: 25%;
+	margin: 50px 20px;
+}
+
+.back-img{
+	width: 300px;
+}
+
+.back-box h1{
+	font-size: 35px;
+}
+
+#foot{
+	background-color: #222222;
+}
+
+#foot p{
+	padding: 50px 100px;
+	font-size: 12px;
+	color: #fff;
+}
+
+/*--- nextデザイン ---*/
+
+
+.menu{
+  width: 100%;
+  height: 80px;
+	background-color: black;
+	position: fixed;
+	z-index: 10;
+}
+
+.home img{
+	position: absolute;
+}
+
+.menu2{
+	display: flex;
+  width: 100%;
+  height: 200px;
+	padding-top: 80px;
+  align-items: center;
+	background-color: darkgrey;
+}
+
+.back-p{
+	width: 175px;
+	margin-left: 75px;
+}
+
+.menu-a{
+	width: 100%;
+	margin: 0 auto;
+}
+
+.menu-b{
+	margin-right: 150px;
+	float: right;
+}
+
+.menu-c{
+	width: 200px;
+}
+
+.nextevent-container{
+	display: flex;
+}
+
+.event-container{
+	width: 70%;
+}
+
+.event-img{
+	width: 100%;
+}
+
+.event-title{
+	margin-top: 20px;
+}
+
+.event-title h1{
+	font-size: 40px;
+}
+
+.event-title h2{
+	margin-bottom: 10px;
+	font-size: 14px;
+}
+
+.event-article{
+	padding-bottom: 100px;
+	border-bottom: solid 1px;
+	border-color: #C0C0C0;
+}
+
+.event-article p{
+	font-size: 15px;
+}
+
+.a{
+	font-weight: bold;
+}
+
+.b{
+	font-size: 30px;
+}
+
+.c{
+	font-size: 20px;
+}
+
+.d{
+	font-size: 20px;
+	line-height: 50px;
+}
+
+.e{
+	line-height: 30px;
+}
+
+.f{
+	margin-bottom: 50px;
+}
+
+.g{
+	color: #fff;
+}
+
+
+
+.event-article2 h1{
+	margin: 75px 0 50px 0px;
+}
+
+.event-article2 h2{
+	margin-top: 50px;
+}
+
+
+.event-img2{
+	width: 40%;
+	margin: 0;
+}
+
+.event-box3{
+	margin-top: 75px;
+}
+
+.event-img3{
+	width: 90%;
+	margin:0px 0px 50px 0px;
+}
+
+.event-img4{
+	width: 100%;
+}
+
+.event-article3{
+	padding-bottom: 30px;
+	border-bottom: solid 1px;
+	border-color: #C0C0C0;
+}
+
+.event-box5{
+	margin-bottom: 100px;
+}
+
+.event-img5{
+	width: 40%;
+	margin: 50px 0px 0px 75px;
+}
+
+.aside-container{
+	width: 25%;
+	margin-left: 30px;
+}
+
+.search_container{
+	margin: 0 auto;
+}
+
+.aside-box{
+	margin-top: 50px;
+}
+
+.aside-box p{
+	font-size: 14px;
+	line-height: 25px;
+}
+
+.aside-box2{
+	margin-top: 150px;
+}
+
+.aside-box2 p{
+	font-size: 14px;
+	line-height: 25px;
+}
+
+.aside-box3{
+	margin-top: 100px;
+}
+
+.aside-box3 p{
+	font-size: 14px;
+	line-height: 25px;
+}
+
+/*--- nextデザイン ---*/
+
+.num-article{
+	padding-bottom: 100px;
+	border-bottom: solid 1px;
+	border-color: #C0C0C0;
+}
+
+.num-img{
+	width: 100%;
+}
+
+.num-article2{
+	margin-top: 30px;
+	padding-bottom: 100px;
+	border-bottom: solid 1px;
+	border-color: #C0C0C0;
+}
+
+.num-box{
+	margin-top: 50px;
+}
+
+.num-box2{
+	margin: 5px 0px;
+}
+
+.num-article3{
+	margin-top: 30px;
+	border-bottom: solid 1px;
+	border-color: #C0C0C0;
+}
+
+.num-box3{
+	margin-top: 30px;
+}
+.gouki{
+	display: flex;
+	flex-direction: row;
+}
+
+.gouki-img{
+	margin: 30px 0px;
+}
+
+.gouki-article{
+	width: 69%;
+	margin: 30px 0px 30px 10px;
+	padding-bottom: 50px;
+	border-bottom: solid 1px;
+	border-color: #C0C0C0;
+}
+
+.kondo{
+	display: flex;
+	flex-direction: row;
+}
+
+.kondo-box{
+	width: 30%;
+	margin: 30px 0px;
+}
+
+.kondo-img{
+	width: 100%;
+	float: left;
+}
+
+.kondo-article{
+	width: 69%;
+	margin: 30px 0px 30px 10px;
+}
+
+.kondo-article2{
+	margin-bottom: 50px;
+	padding-bottom: 50px;
+	border-bottom: solid 1px;
+	border-color: #C0C0C0;
+}
+
+.meme{
+	display: block;
+}
+
+.meme-box{
+	width: 100%;
+	margin: 50px 0px;
+}
+
+.meme-img{
+	float: left;
+}
+
+@media screen and (max-width: 767px){
+	/*--- homeデザイン ---*/
+
+.home-top{
+	width: 100%;
+	height: 100vh;
+	background-image: url(../img/beyond_51.JPG);
+	background-size: cover;
+}
+
+.home-menu{
+	width: 100%;
+	height: 72px;
+	z-index: 10;
+	position: fixed;
+}
+
+#logo{
+	width: 15%;
+	position: absolute;
+	top:7px;
+}
+
+img{
+	width: 375px;
+	margin: 0 auto;
+}
+
+nav{
+	margin: 0px;
+	display: block;
+}
+
+nav li {
+	width: 120px;
+	margin: 10px 5px;
+	display: block;
+}
+
+nav ul{
+	position: absolute;
+	top: -354px;
+}
+
+nav li a {
+	text-decoration: none;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+nav li a:hover{
+	text-decoration: underline;
+	color: #3366ff;
+}
+
+.burger-btn{
+	display: block;
+}
+
+.prologue-container{
+	background-image: url(../img/beyond_53.JPG);
+	background-attachment: fixed;
+}
+
+.title h1{
+	padding-top: 50px;
+	text-align: center;
+	font-size: 25px;
+	font-weight: bold;
+	font-family: YuGothic,'Yu Gothic',sans-serif;
+}
+
+.title h2{
+	text-align: center;
+	font-size: 14px;
+}
+
+.title2 h1{
+	padding-top: 50px;
+	text-align: center;
+	font-size: 25px;
+	color: #fff;
+}
+
+.title2 h2{
+	text-align: center;
+	font-size: 14px;
+	color: #fff;
+}
+
+.title3 h1{
+	padding: 50px;
+	text-align: center;
+	font-size: 25px;
+	font-family: YuGothic,'Yu Gothic',sans-serif;
+}
+
+.pro-article{
+	margin: 0px 40px;
+}
+
+.pro-article{
+	font-size: 14px;
+}
+
+.pro-article h1{
+	padding-bottom: 20px;
+}
+
+.pro-article h2{
+	padding: 50px 0px;
+}
+
+.pro-article p{
+	font-weight: bold;
+}
+
+.beyond-container{
+	background-image: url(../img/beyond_52.JPG);
+	background-attachment: fixed;
+}
+
+.beyond-article{
+	padding: 0px 40px 100px 40px;
+	color: #fff;
+}
+
+.beyond-article h1{
+	padding: 20px 0px 45px 0px;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.beyond-article h2{
+	padding: 10px 0px;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.next-container{
+	background-color: #EEEEEE;
+}
+
+.next-img{
+	width: 100%;
+}
+
+.next-article{
+	width: 100%;
+	margin: 0 auto;
+	display: flex;
+	justify-content:center;
+	flex-direction:column;
+}
+
+.next-box{
+	margin: 20px 0px;
+}
+
+.next-box2{
+	margin: 0px 0px 50px 0px;
+}
+
+#next-reservation{
+	width: 100%;
+}
+
+.voice-container{
+	background-color: #CCFFFF;
+}
+
+.voice-article{
+	width: 100%;
+	margin: 0 auto;
+	display: flex;
+	justify-content:center;
+	flex-direction:column;
+}
+
+.voice-box{
+	margin: 50px 30px 50px 60px;
+}
+
+
+.voice-box p{
+	font-size: 13px;
+}
+
+
+.voicename-article{
+	display: flex;
+	flex-direction:row;
+}
+
+.backnum-container{
+	margin-bottom: 100px;
+}
+
+.back-article{
+	width: 100%;
+	margin: 0 auto;
+	display: flex;
+	justify-content:center;
+	flex-direction:column;
+}
+
+.back-box{
+	width: 95%;
+}
+
+.back-img{
+	width: 99%;
+}
+
+.back-box h1{
+	font-size: 35px;
+}
+
+#foot{
+	background-color: #222222;
+}
+
+#foot p{
+	padding: 50px 100px;
+	font-size: 12px;
+}
+
+#foot p{
+	color: #fff;
+}
+
+	/*--- nextデザイン ---*/
+
+
+.menu{
+	width: 100%;
+	height: 80px;
+	background-color: black;
+	position: fixed;
+	z-index: 10;
+}
+
+.home img{
+	position: absolute;
+}
+
+.menu2{
+	display: flex;
+	width: 100%;
+	height: 200px;
+	padding-top: 80px;
+	 align-items: center;
+	background-color: darkgrey;
+}
+
+.back-p{
+	width: 200px;
+	margin-left: 40px;
+}
+
+.menu-a{
+	width: 100%;
+	margin: 0 auto;
+}
+
+.menu-b{
+	margin-right: 50px;
+	float: right;
+}
+
+.menu-c{
+	width: 200px;
+}
+
+.nextevent-container{
+	display: flex;
+	flex-direction: column;
+}
+
+.event-container{
+	width: 100%;
+	margin-top: 100px;
+}
+
+.event-img{
+	width: 95%;
+}
+
+.event-title{
+	margin: 20px 30px 0px 30px;
+}
+
+.event-title h1{
+	font-size: 40px;
+}
+
+.event-title h2{
+	margin-bottom: 10px;
+	font-size: 14px;
+}
+
+.event-article{
+	margin: 0px 30px;
+	padding-bottom: 100px;
+	border-bottom: solid 1px;
+	border-color: #C0C0C0;
+}
+
+.event-article p{
+	font-size: 15px;
+}
+
+.a{
+	font-weight: bold;
+}
+
+.b{
+	font-size: 30px;
+}
+
+.c{
+	font-size: 20px;
+}
+
+.d{
+	font-size: 20px;
+	line-height: 50px;
+}
+
+.e{
+	line-height: 30px;
+}
+
+.f{
+	margin-bottom: 50px;
+}
+
+.g{
+	color: #fff;
+}
+
+.event-article2{
+	margin: 0px 30px;
+}
+
+.event-article2 h1{
+	margin: 75px 0 50px 0px;
+}
+
+.event-article2 h2{
+	margin-top: 50px;
+}
+
+
+.event-img2{
+	width: 40%;
+	margin: 0;
+}
+
+.event-box3{
+	margin-top: 75px;
+}
+
+	.event-img3{
+		width: 100%;
+		margin:0px 0px 50px 0px;
+	}
+
+	.event-img4{
+		width: 100%;
+	}
+
+	.event-article3{
+		margin: 0px 30px;
+		padding-bottom: 30px;
+		border-bottom: solid 1px;
+		border-color: #C0C0C0;
+	}
+
+	.event-box5{
+		margin-bottom: 100px;
+	}
+
+	.event-img5{
+		width: 40%;
+		margin: 50px 0px 0px 75px;
+	}
+
+	.aside-container{
+		width: 25%;
+		margin-left: 30px;
+	}
+
+	.search_container{
+		margin: 0 auto;
+	}
+
+	.aside-box{
+		margin-top: 50px;
+	}
+
+	.aside-box p{
+		font-size: 14px;
+		line-height: 25px;
+	}
+
+	.aside-box2{
+		margin-top: 150px;
+	}
+
+	.aside-box2 p{
+		font-size: 14px;
+		line-height: 25px;
+	}
+
+	.aside-box3{
+		margin-top: 100px;
+	}
+
+	.aside-box3 p{
+		font-size: 14px;
+		line-height: 25px;
+	}
+
+	/*--- nextデザイン ---*/
+
+	.num-article{
+		padding-bottom: 100px;
+		border-bottom: solid 1px;
+		border-color: #C0C0C0;
+	}
+
+	.num-img{
+		width: 100%;
+	}
+
+	.num-article2{
+		margin-top: 30px;
+		padding-bottom: 100px;
+		border-bottom: solid 1px;
+		border-color: #C0C0C0;
+	}
+
+	.num-box{
+		margin-top: 50px;
+	}
+
+	.num-box2{
+		margin: 5px 0px;
+	}
+
+	.num-article3{
+		margin-top: 30px;
+		border-bottom: solid 1px;
+		border-color: #C0C0C0;
+	}
+
+	.num-box3{
+		margin-top: 30px;
+	}
+	.gouki{
+		display: flex;
+		flex-direction: row;
+	}
+
+	.gouki-img{
+		margin: 30px 0px;
+	}
+
+	.gouki-article{
+		width: 69%;
+		margin: 30px 0px 30px 10px;
+		padding-bottom: 50px;
+		border-bottom: solid 1px;
+		border-color: #C0C0C0;
+	}
+
+	.kondo{
+		margin: 0px 30px;
+		display: flex;
+		flex-direction: row;
+	}
+
+	.kondo-box{
+		width: 30%;
+		margin: 30px 0px;
+	}
+
+	.kondo-img{
+		width: 100%;
+		float: left;
+	}
+
+	.kondo-article{
+		width: 69%;
+		margin: 30px 0px 30px 10px;
+	}
+
+	.kondo-article2{
+		margin-bottom:50px;
+		padding-bottom: 50px;
+		border-bottom: solid 1px;
+		border-color: #C0C0C0;
+	}
+
+	.meme{
+		display: block;
+	}
+
+	.meme-box{
+		width: 100%;
+		margin: 50px 0px;
+	}
+
+	.meme-img{
+		float: left;
+	}
+}
